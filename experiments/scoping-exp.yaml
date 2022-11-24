@@ -1,0 +1,22 @@
+benchmark: 5
+quiet: True
+scalar: False
+stopping-criterion:
+  mode: error   # Train to target error or loss minimum
+  target-error: 0.5
+  loss-stop: 0.1
+  loss-grad-stop: .inf
+  loss-grad-grad-stop: .inf
+optimizer:
+  type: AdamW   #AdamW, SGD
+  lr: 1e-3
+  momentum: 0.99 # SGD only
+output-type: csv # None, xml, plot, csv
+output-file: na-results  # Exclude extension 
+iterative: True
+reduction: 0.75
+timeout: True
+timeout-duration: 300
+seed: 0
+repeat: 1
+save-net: False

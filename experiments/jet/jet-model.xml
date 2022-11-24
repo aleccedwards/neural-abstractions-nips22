@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="NA">
+    <note>Model error = [0.039, 0.015]</note>
+    <param name="x0" type="real" d1="1" d2="1" local="false" dynamics="any" controlled="true" />
+    <param name="x1" type="real" d1="1" d2="1" local="false" dynamics="any" controlled="true" />
+    <param name="u0" type="real" d1="1" d2="1" local="false" dynamics="any" controlled="false" />
+    <param name="u1" type="real" d1="1" d2="1" local="false" dynamics="any" controlled="false" />
+    <param name="t" type="real" d1="1" d2="1" local="false" dynamics="any" controlled="true" />
+    <location id="0" name="P0">
+      <flow>x0'==-1.5200081461806003 * x0 + -0.9989796665809705 * x1+ 0.220701855242613 + u0 &amp;
+x1'==2.9920181087697664 * x0+ -1.0001210152907265 * x1+ 0.00416571041783953 + u1&amp;
+t'==1</flow>
+      <invariant>-173.8832318908727734007155111 + 649.6668033733446018558718571 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+677.2490496938365350924245780 + -1205.594075176379531272230175 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+u0 &lt;=0.039 &amp;
+u0 &gt;= -0.039 &amp;
+u1 &lt;=0.015 &amp;
+u1 &gt;= -0.015 &amp;
+t &lt;=1.5</invariant>
+    </location>
+    <location id="1" name="P1">
+      <flow>x0'==1.3049010893559256 * x0 + -1.0001300670654805 * x1+ 0.24394554508640792 + u0 &amp;
+x1'==3.0660079464606977 * x0+ -1.0002418657242331 * x1+ 0.03493487165029352 + u1&amp;
+t'==1</flow>
+      <invariant>8748.128881485616009596126117 + 12393.64858725787294705854796 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+-1793.998888543041400361638475 + -4323.764340506127879432140090 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+u0 &lt;=0.039 &amp;
+u0 &gt;= -0.039 &amp;
+u1 &lt;=0.015 &amp;
+u1 &gt;= -0.015 &amp;
+t &lt;=1.5</invariant>
+    </location>
+    <location id="2" name="P2">
+      <flow>x0'==1.4215279345569505 * x0 + -1.000139477276233 * x1+ 0.32626728155298745 + u0 &amp;
+x1'==2.9469053980182047 * x0+ -1.0002322557576762 * x1+ -0.04913435433692204 + u1&amp;
+t'==1</flow>
+      <invariant>1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 1 * x0 + 0 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+-8748.128881485616009596126117 + -12393.64858725787294705854796 * x0 + 1 * x1 &gt;= 0 &amp;
+u0 &lt;=0.039 &amp;
+u0 &gt;= -0.039 &amp;
+u1 &lt;=0.015 &amp;
+u1 &gt;= -0.015 &amp;
+t &lt;=1.5</invariant>
+    </location>
+    <location id="3" name="P3">
+      <flow>x0'==-0.34213342414641756 * x0 + -1.0007927109229597 * x1+ -0.09455615450391128 + u0 &amp;
+x1'==3.0227079544479785 * x0+ -1.0001682546533026 * x1+ -0.004048422619358338 + u1&amp;
+t'==1</flow>
+      <invariant>57.29869077801736782053107017 + 1145.639428697558741918897909 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+173.8832318908727734007155111 + -649.6668033733446018558718571 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+u0 &lt;=0.039 &amp;
+u0 &gt;= -0.039 &amp;
+u1 &lt;=0.015 &amp;
+u1 &gt;= -0.015 &amp;
+t &lt;=1.5</invariant>
+    </location>
+    <location id="4" name="P4">
+      <flow>x0'==0.6029965422582122 * x0 + -0.9999677306170015 * x1+ -0.04728586305486121 + u0 &amp;
+x1'==2.9651103756165407 * x0+ -1.0002185301391044 * x1+ -0.006929142134028954 + u1&amp;
+t'==1</flow>
+      <invariant>1793.998888543041400361638475 + 4323.764340506127879432140090 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+-57.29869077801736782053107017 + -1145.639428697558741918897909 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+u0 &lt;=0.039 &amp;
+u0 &gt;= -0.039 &amp;
+u1 &lt;=0.015 &amp;
+u1 &gt;= -0.015 &amp;
+t &lt;=1.5</invariant>
+    </location>
+    <location id="5" name="P5">
+      <flow>x0'==-2.895116290382943 * x0 + -1.0004249375267202 * x1+ 1.0041084977045822 + u0 &amp;
+x1'==3.0590426584136887 * x0+ -0.9998043543993194 * x1+ -0.04285341396277764 + u1&amp;
+t'==1</flow>
+      <invariant>-486.2677169772559361334894505 + 846.6012749791373333915429179 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+1471.843555515929056492121912 + -1742.991189730454498303100887 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+u0 &lt;=0.039 &amp;
+u0 &gt;= -0.039 &amp;
+u1 &lt;=0.015 &amp;
+u1 &gt;= -0.015 &amp;
+t &lt;=1.5</invariant>
+    </location>
+    <location id="6" name="P6">
+      <flow>x0'==-2.028919824091973 * x0 + -0.9994017918123316 * x1+ 0.5065857670336931 + u0 &amp;
+x1'==2.316801481228513 * x0+ -1.000681084920666 * x1+ 0.38347233505672473 + u1&amp;
+t'==1</flow>
+      <invariant>-677.2490496938365350924245780 + 1205.594075176379531272230175 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+486.2677169772559361334894505 + -846.6012749791373333915429179 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+u0 &lt;=0.039 &amp;
+u0 &gt;= -0.039 &amp;
+u1 &lt;=0.015 &amp;
+u1 &gt;= -0.015 &amp;
+t &lt;=1.5</invariant>
+    </location>
+    <location id="7" name="P7">
+      <flow>x0'==-4.324093991092522 * x0 + -0.9996050953444253 * x1+ 2.210787930255597 + u0 &amp;
+x1'==2.943260204637772 * x0+ -0.9997379269529512 * x1+ 0.05491739488351244 + u1&amp;
+t'==1</flow>
+      <invariant>-1471.843555515929056492121912 + 1742.991189730454498303100887 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + -1 * x0 + 0 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+u0 &lt;=0.039 &amp;
+u0 &gt;= -0.039 &amp;
+u1 &lt;=0.015 &amp;
+u1 &gt;= -0.015 &amp;
+t &lt;=1.5</invariant>
+    </location>
+    <location id="8" name="End">
+      <flow>x0'== 0 &amp;
+x1'== 0 &amp;
+t'==0</flow>
+      <invariant>t &gt;=1.5
+</invariant>
+    </location>
+    <transition source="0" target="3">
+      <guard>57.29869077801736782053107017 + 1145.639428697558741918897909 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+173.8832318908727734007155111 + -649.6668033733446018558718571 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="0" target="6">
+      <guard>-677.2490496938365350924245780 + 1205.594075176379531272230175 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+486.2677169772559361334894505 + -846.6012749791373333915429179 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="1" target="2">
+      <guard>1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 1 * x0 + 0 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+-8748.128881485616009596126117 + -12393.64858725787294705854796 * x0 + 1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="1" target="4">
+      <guard>1793.998888543041400361638475 + 4323.764340506127879432140090 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+-57.29869077801736782053107017 + -1145.639428697558741918897909 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="2" target="1">
+      <guard>8748.128881485616009596126117 + 12393.64858725787294705854796 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+-1793.998888543041400361638475 + -4323.764340506127879432140090 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="3" target="0">
+      <guard>-173.8832318908727734007155111 + 649.6668033733446018558718571 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+677.2490496938365350924245780 + -1205.594075176379531272230175 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="3" target="4">
+      <guard>1793.998888543041400361638475 + 4323.764340506127879432140090 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+-57.29869077801736782053107017 + -1145.639428697558741918897909 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="4" target="1">
+      <guard>8748.128881485616009596126117 + 12393.64858725787294705854796 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+-1793.998888543041400361638475 + -4323.764340506127879432140090 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="4" target="3">
+      <guard>57.29869077801736782053107017 + 1145.639428697558741918897909 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+173.8832318908727734007155111 + -649.6668033733446018558718571 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="5" target="6">
+      <guard>-677.2490496938365350924245780 + 1205.594075176379531272230175 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+486.2677169772559361334894505 + -846.6012749791373333915429179 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="5" target="7">
+      <guard>-1471.843555515929056492121912 + 1742.991189730454498303100887 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + -1 * x0 + 0 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="6" target="0">
+      <guard>-173.8832318908727734007155111 + 649.6668033733446018558718571 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+677.2490496938365350924245780 + -1205.594075176379531272230175 * x0 + -1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="6" target="5">
+      <guard>-486.2677169772559361334894505 + 846.6012749791373333915429179 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+1471.843555515929056492121912 + -1742.991189730454498303100887 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="7" target="5">
+      <guard>-486.2677169772559361334894505 + 846.6012749791373333915429179 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + 1 * x1 &gt;= 0 &amp;
+1471.843555515929056492121912 + -1742.991189730454498303100887 * x0 + 1 * x1 &gt;= 0 &amp;
+1 + 0 * x0 + -1 * x1 &gt;= 0 &amp;
+t &lt;= 1.5</guard>
+    </transition>
+    <transition source="0" target="8">
+      <guard>t &gt;= 1.5</guard>
+    </transition>
+    <transition source="1" target="8">
+      <guard>t &gt;= 1.5</guard>
+    </transition>
+    <transition source="2" target="8">
+      <guard>t &gt;= 1.5</guard>
+    </transition>
+    <transition source="3" target="8">
+      <guard>t &gt;= 1.5</guard>
+    </transition>
+    <transition source="4" target="8">
+      <guard>t &gt;= 1.5</guard>
+    </transition>
+    <transition source="5" target="8">
+      <guard>t &gt;= 1.5</guard>
+    </transition>
+    <transition source="6" target="8">
+      <guard>t &gt;= 1.5</guard>
+    </transition>
+    <transition source="7" target="8">
+      <guard>t &gt;= 1.5</guard>
+    </transition>
+  </component>
+</sspaceex>

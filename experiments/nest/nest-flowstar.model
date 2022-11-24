@@ -1,0 +1,41 @@
+continuous reachability
+{
+ state var x1, x2
+
+ setting
+ {
+  fixed steps 0.05
+  time 1.0
+  remainder estimation 0.01
+  QR precondition
+  gnuplot octagon x1, x2
+  fixed orders 30
+  cutoff 1e-30
+  precision 256
+  output exp
+  print on
+ }
+	
+ nonpoly ode
+ {
+
+  x1' = - sin(exp((x2^3)+1)) - x2^2
+  x2' = -x1
+  
+ }
+ 
+ init
+ {
+  x1 in [0.45 , 0.5]
+  x2 in [0.86, 0.91]
+ }
+}
+
+unsafe
+{
+ x1 in [0.3, 0.4]
+ x2 in [0.5, 0.6]
+}
+
+# Flowstar returns safe but for incomplete flowpipe so safety is not certified
+

@@ -1,0 +1,38 @@
+continuous reachability
+{
+ state var x1, x2
+
+ setting
+ {
+  fixed steps 0.1
+  time 1.5
+  remainder estimation 0.1
+  QR precondition
+  gnuplot octagon x1, x2
+  fixed orders 10
+  cutoff 1e-15
+  precision 256
+  output jet
+  print on
+ }
+	
+ poly ode 1
+ {
+  x1' = -x2 - 1.5 * x1^2 - 0.5 * x1^3
+  
+  x2' = 3*x1 - x2
+  
+ }
+ 
+ init
+ {
+  x1 in [0.45 , 0.5]
+  x2 in [-0.6, -0.55]
+ }
+}
+
+unsafe
+{
+ x1 in [0.3, 0.35]
+ x2 in [0.5, 0.6]
+}

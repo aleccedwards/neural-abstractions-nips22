@@ -1,0 +1,25 @@
+benchmark: tank
+width: [12]
+quiet: True
+scalar: False
+stopping-criterion:
+  mode: loss   # Train to target error or loss minimum
+  target-error: 0.05
+  loss-stop: 2.5e-5
+  loss-grad-stop: .inf
+  loss-grad-grad-stop: .inf
+optimizer:
+  type: AdamW   #AdamW, SGD
+  lr: 1e-3
+  momentum: 0.99 # SGD only
+output-type: [xml] # None, xml, plot, csv
+output-file: watertank-model  # Exclude extension 
+iterative: False
+reduction: 0.6
+timeout: False
+timeout-duration: 120
+seed: 0
+repeat: 1
+save-net: False
+bounded-time: True
+time-horizon: 2.0

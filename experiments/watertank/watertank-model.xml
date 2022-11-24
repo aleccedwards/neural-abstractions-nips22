@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="NA">
+    <note>Model error = [0.097]</note>
+    <param name="x0" type="real" d1="1" d2="1" local="false" dynamics="any" controlled="true" />
+    <param name="u0" type="real" d1="1" d2="1" local="false" dynamics="any" controlled="false" />
+    <param name="t" type="real" d1="1" d2="1" local="false" dynamics="any" controlled="true" />
+    <location id="0" name="P0">
+      <flow>x0'==-1.2719239336710757 * x0+ 1.3084015717465314 + u0&amp;
+t'==1</flow>
+      <invariant>0.24596579372882843017578125 + -0.957036316394805908203125 * x0 &gt;= 0 &amp;
+-0.109510399401187896728515625 + 1.2722232341766357421875 * x0 &gt;= 0 &amp;
+u0 &lt;=0.097 &amp;
+u0 &gt;= -0.097 &amp;
+t &lt;=2.0</invariant>
+    </location>
+    <location id="1" name="P1">
+      <flow>x0'==-2.474801240087558 * x0+ 1.4119428141304171 + u0&amp;
+t'==1</flow>
+      <invariant>0 + 1 * x0 &gt;= 0 &amp;
+0.109510399401187896728515625 + -1.2722232341766357421875 * x0 &gt;= 0 &amp;
+u0 &lt;=0.097 &amp;
+u0 &gt;= -0.097 &amp;
+t &lt;=2.0</invariant>
+    </location>
+    <location id="2" name="P2">
+      <flow>x0'==-0.7646610004713388 * x0+ 1.1780310436314667 + u0&amp;
+t'==1</flow>
+      <invariant>-0.24596579372882843017578125 + 0.957036316394805908203125 * x0 &gt;= 0 &amp;
+0.3266623914241790771484375 + -0.528260171413421630859375 * x0 &gt;= 0 &amp;
+u0 &lt;=0.097 &amp;
+u0 &gt;= -0.097 &amp;
+t &lt;=2.0</invariant>
+    </location>
+    <location id="3" name="P3">
+      <flow>x0'==-0.532506711241572 * x0+ 1.0344728512803987 + u0&amp;
+t'==1</flow>
+      <invariant>-0.3266623914241790771484375 + 0.528260171413421630859375 * x0 &gt;= 0 &amp;
+0.4939992129802703857421875 + -0.421427786350250244140625 * x0 &gt;= 0 &amp;
+u0 &lt;=0.097 &amp;
+u0 &gt;= -0.097 &amp;
+t &lt;=2.0</invariant>
+    </location>
+    <location id="4" name="P4">
+      <flow>x0'==-0.40191399546801776 * x0+ 0.8813915858712041 + u0&amp;
+t'==1</flow>
+      <invariant>0.97788727283477783203125 + -0.50154197216033935546875 * x0 &gt;= 0 &amp;
+-0.4939992129802703857421875 + 0.421427786350250244140625 * x0 &gt;= 0 &amp;
+u0 &lt;=0.097 &amp;
+u0 &gt;= -0.097 &amp;
+t &lt;=2.0</invariant>
+    </location>
+    <location id="5" name="P5">
+      <flow>x0'==-0.133596112141543 * x0+ 0.3582356831882597 + u0&amp;
+t'==1</flow>
+      <invariant>2 + -1 * x0 &gt;= 0 &amp;
+-0.97788727283477783203125 + 0.50154197216033935546875 * x0 &gt;= 0 &amp;
+u0 &lt;=0.097 &amp;
+u0 &gt;= -0.097 &amp;
+t &lt;=2.0</invariant>
+    </location>
+    <location id="6" name="End">
+      <flow>x0'== 0 &amp;
+t'==0</flow>
+      <invariant>t &gt;=2.0
+</invariant>
+    </location>
+    <transition source="0" target="1">
+      <guard>0 + 1 * x0 &gt;= 0 &amp;
+0.109510399401187896728515625 + -1.2722232341766357421875 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="0" target="2">
+      <guard>-0.24596579372882843017578125 + 0.957036316394805908203125 * x0 &gt;= 0 &amp;
+0.3266623914241790771484375 + -0.528260171413421630859375 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="1" target="0">
+      <guard>0.24596579372882843017578125 + -0.957036316394805908203125 * x0 &gt;= 0 &amp;
+-0.109510399401187896728515625 + 1.2722232341766357421875 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="2" target="0">
+      <guard>0.24596579372882843017578125 + -0.957036316394805908203125 * x0 &gt;= 0 &amp;
+-0.109510399401187896728515625 + 1.2722232341766357421875 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="2" target="3">
+      <guard>-0.3266623914241790771484375 + 0.528260171413421630859375 * x0 &gt;= 0 &amp;
+0.4939992129802703857421875 + -0.421427786350250244140625 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="3" target="2">
+      <guard>-0.24596579372882843017578125 + 0.957036316394805908203125 * x0 &gt;= 0 &amp;
+0.3266623914241790771484375 + -0.528260171413421630859375 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="3" target="4">
+      <guard>0.97788727283477783203125 + -0.50154197216033935546875 * x0 &gt;= 0 &amp;
+-0.4939992129802703857421875 + 0.421427786350250244140625 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="4" target="3">
+      <guard>-0.3266623914241790771484375 + 0.528260171413421630859375 * x0 &gt;= 0 &amp;
+0.4939992129802703857421875 + -0.421427786350250244140625 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="4" target="5">
+      <guard>2 + -1 * x0 &gt;= 0 &amp;
+-0.97788727283477783203125 + 0.50154197216033935546875 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="5" target="4">
+      <guard>0.97788727283477783203125 + -0.50154197216033935546875 * x0 &gt;= 0 &amp;
+-0.4939992129802703857421875 + 0.421427786350250244140625 * x0 &gt;= 0 &amp;
+t &lt;= 2.0</guard>
+    </transition>
+    <transition source="0" target="6">
+      <guard>t &gt;= 2.0</guard>
+    </transition>
+    <transition source="1" target="6">
+      <guard>t &gt;= 2.0</guard>
+    </transition>
+    <transition source="2" target="6">
+      <guard>t &gt;= 2.0</guard>
+    </transition>
+    <transition source="3" target="6">
+      <guard>t &gt;= 2.0</guard>
+    </transition>
+    <transition source="4" target="6">
+      <guard>t &gt;= 2.0</guard>
+    </transition>
+    <transition source="5" target="6">
+      <guard>t &gt;= 2.0</guard>
+    </transition>
+  </component>
+</sspaceex>

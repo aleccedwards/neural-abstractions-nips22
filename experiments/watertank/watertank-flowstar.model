@@ -1,0 +1,31 @@
+continuous reachability
+{
+ state var x1, t
+
+ setting
+ {
+  fixed steps 0.1
+  time 20
+  remainder estimation 0.001
+  QR precondition
+  gnuplot octagon t, x1
+  fixed orders 10
+  cutoff 1e-15
+  precision 256
+  output watertank
+  print on
+ }
+	
+ nonpoly ode 
+ {
+  x1' = 1.5 - sqrt(x1)
+  t' = 1
+  
+
+ }
+ 
+ init
+ {
+  x1 in [0, 0.1]
+ }
+}

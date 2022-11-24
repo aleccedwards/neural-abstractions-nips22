@@ -1,0 +1,25 @@
+benchmark: lv
+width: 10
+quiet: False
+scalar: False
+stopping-criterion:
+  mode: loss   # Train to target error or loss minimum
+  target-error: 0.3
+  loss-stop: 0.0050
+  loss-grad-stop: .inf
+  loss-grad-grad-stop: .inf
+optimizer:
+  type: AdamW   #AdamW, SGD
+  lr: 1e-3
+  momentum: 0.99 # SGD only
+output-type: xml # None, xml, plot, csv
+output-file: /neural-abstraction/test-xml  # Exclude extension 
+iterative: False
+reduction: 0.9
+timeout: False
+timeout-duration: 120
+seed: 0
+repeat: 1
+save-net: False
+bounded-time: True
+time-horizon: 1.4

@@ -1,0 +1,44 @@
+continuous reachability
+{
+ state var x, y, z
+
+ setting
+ {
+  fixed steps 0.1
+  time 2.0
+  remainder estimation 0.001
+  QR precondition
+  gnuplot octagon x, z
+  fixed orders 10
+  cutoff 1e-15
+  precision 256
+  output steam
+  print on
+ }
+	
+ nonpoly ode
+ {
+  x' = y
+  
+  y' = z^2 * sin(x) * cos(x) - sin(x) - 3 * y
+
+  z' = -(cos(x) - 1)
+  
+ }
+ 
+ init
+ {
+  x in [0.7 , 0.75]
+  y in [-0.05 , 0.05]
+  z in [0.7, 0.75]
+ }
+}
+
+
+unsafe
+{
+ x in [0.5, 0.6]
+ y in [-0.4, -0.3]
+ z in [0.7, 0.8]
+}
+
